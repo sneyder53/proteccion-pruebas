@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row ustify-content-md-center">
+    <div class="col col-lg-2"></div>
+    <div class="col-md-auto">
+      <h1 style="text-align: center">{{ title }}</h1>
+    </div>
+    <div class="col col-lg-2"></div>
+  </div>
+  <div class="row ustify-content-md-center">
+    <div class="col col-lg-2"></div>
+    <div class="col-md-auto">
+      <div *ngIf="!imagen" class="text-center" id="cajaImagen" >
+        <img src="http://127.0.0.1:8000/uploads/1605832864.jpeg" class="rounded" alt="Responsive image">
+      </div>
+      <div *ngIf="imagen && orientacion == 'Vertical'" class="text-center" id="cajaImagen">
+        <img src="http://127.0.0.1:8000/uploads/{{imagen}}" class="rounded" alt="Responsive image">
+      </div>
+      <div *ngIf="imagen && orientacion == 'Horizontal'" class="text-center" id="cajaImagen2">
+        <img src="http://127.0.0.1:8000/uploads/{{imagen}}" class="rounded" alt="Responsive image">
+      </div>
+      <p class="justify-content-center text-justify">
+        <label for="orientacion" class="text-justify">Orientacion: </label>
+        <input type="text" disabled value="{{orientacion}}">
+        <br>
+        <label for="ancho">Ancho: </label>
+        <input type="text" disabled value="{{ancho}}">
+        <br>
+        <label for="alto">Alto: </label>
+        <input type="text" disabled value="{{alto}}">
+      </p>
+    </div>
+    <div class="col col-lg-2"></div>
+  </div>
+  <div class="row ustify-content-md-center">
+    <div class="col col-lg-2"></div>
+    <div class="col-md-auto justify-content-center">
+      <form action="subir" >
+        <label for="cargar">Cargar Imagen: </label>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+          </div>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile01" (change)="fileChangeEvent($event)" aria-describedby="inputGroupFileAddon01">
+            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+          </div>
+          <div class="boton">
+            <button class="btn btn-success" (click)="crearImagen()">Subir Imagen</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+    <div class="col col-lg-2"></div>
+  </div>
+</div>

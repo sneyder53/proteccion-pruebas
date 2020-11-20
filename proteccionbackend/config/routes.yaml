@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+upload:
+    path: /upload
+    controller: App\Controller\BackendController::upload

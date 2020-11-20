@@ -1,0 +1,16 @@
+#cajaImagen {
+  width: 796px;
+  height: 1123px;
+  border: 1px solid rgb(204, 187, 187);
+  margin: 2%;
+}
+#cajaImagen2 {
+  width: 1123px;
+  height: 796px;
+  border: 1px solid rgb(204, 187, 187);
+  margin: 2%;
+}
+
+.boton{
+  margin-left: 1%;
+}

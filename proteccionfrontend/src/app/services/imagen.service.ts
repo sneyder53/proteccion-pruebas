@@ -7,7 +7,7 @@ import { Observable } from 'rxjs/Observable';
 
 export class ImagenService{
 
-	public url = "http://localhost:8000/upload";
+	public url = "http://192.168.0.24:8080/upload";
 
 
 	constructor(

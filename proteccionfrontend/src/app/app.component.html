@@ -10,13 +10,13 @@
     <div class="col col-lg-2"></div>
     <div class="col-md-auto">
       <div *ngIf="!imagen" class="text-center" id="cajaImagen" >
-        <img src="http://127.0.0.1:8000/uploads/1605832864.jpeg" class="rounded" alt="Responsive image">
+        <img src="http://192.168.0.24:8080/uploads/1605832864.jpeg" class="rounded" alt="Responsive image">
       </div>
       <div *ngIf="imagen && orientacion == 'Vertical'" class="text-center" id="cajaImagen">
-        <img src="http://127.0.0.1:8000/uploads/{{imagen}}" class="rounded" alt="Responsive image">
+        <img src="http://192.168.0.24:8080/uploads/{{imagen}}" class="rounded" alt="Responsive image">
       </div>
       <div *ngIf="imagen && orientacion == 'Horizontal'" class="text-center" id="cajaImagen2">
-        <img src="http://127.0.0.1:8000/uploads/{{imagen}}" class="rounded" alt="Responsive image">
+        <img src="http://192.168.0.24:8080/uploads/{{imagen}}" class="rounded" alt="Responsive image">
       </div>
       <p class="justify-content-center text-justify">
         <label for="orientacion" class="text-justify">Orientacion: </label>

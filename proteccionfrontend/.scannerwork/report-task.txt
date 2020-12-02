@@ -1,0 +1,6 @@
+projectKey=1_1
+serverUrl=http://192.168.0.22:9000
+serverVersion=8.5.1.38104
+dashboardUrl=http://192.168.0.22:9000/dashboard?id=1_1
+ceTaskId=AXYll1dFHcfxXHPcTexX
+ceTaskUrl=http://192.168.0.22:9000/api/ce/task?id=AXYll1dFHcfxXHPcTexX

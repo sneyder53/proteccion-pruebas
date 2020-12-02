@@ -9,15 +9,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class BackendController extends AbstractController
 {
-    /**
-     * @Route("/backend", name="backend")
-     */
-    public function index(): Response
-    {
-        return $this->render('backend/index.html.twig', [
-            'controller_name' => 'BackendController',
-        ]);
-    }
 
     public function upload(Request $request ){
         $json = $request->get("image", null);
